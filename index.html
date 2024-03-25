@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 1</title>
+    <style>
+        .container {
+            background-color: orange;
+            width: 80%;
+            margin: auto;
+            border: 5px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            width: 25%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .textbox {
+            background-color: aliceblue;
+            font-size: xx-large;
+            font-style: italic;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            width: 600px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Exercise 1</h1>
+        <center>
+        <div class="textbox" id="paragraph">
+            Text ini hanya untuk mengerjakan format yang ditentukan
+            <br>jadi tidak terlalu penting
+        </div>
+        </center>
+        <div class="center">
+            <img src="th.jpeg">
+        </div>
+        <div class="center">
+            <button onclick="showAlert()">pencet</button>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Tombol telah dipencet!");
+        }
+    </script>
 </body>
 </html>
+
+
